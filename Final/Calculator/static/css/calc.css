@@ -1,0 +1,36 @@
+table,tr,td{
+    margin-left:auto; 
+    margin-right:auto;
+	border: solid rgb(5, 3, 101); 
+}
+
+textarea{
+	display: block;
+ 	margin-bottom: 8px;
+ 	margin-left:auto; 
+    margin-right:auto;
+    border-radius: 5px;
+
+ }
+
+ button{
+ 	height: 60px;
+ 	width: 60px;
+	margin: 3px;
+	border-radius: 50%;
+	font-size: 20px;
+ }
+ .container{
+	width: 20%;
+	height: 5%;
+	margin-top: 15px;
+	margin-left: 38%;
+	text-align: center;
+	
+ }
+ .div{
+	width: 300px;
+	height: 100px;  
+	padding: 50px;
+	
+  }

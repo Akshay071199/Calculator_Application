@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/calc.css" %}">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous">
+  	</script>
+</head>
+<body style="background-color: rgb(203, 221, 235);">
+	<div class="container">
+		
+			<h1 style="background-color: rgb(239, 201, 11); width: 280px; height: 45px;">Calculator App</h1>
+			<br><br>
+
+		<textarea id="resultArea" readonly rows="3" cols="21" style="width: 275px;
+		 background-color: #aac8e0; border: solid rgb(5, 3, 101);"></textarea>
+
+		<table>
+			<tr>
+				<td><button id="bracket1" class="btn btn-primary"></button></td>
+				<td><button id="bracket2" class="btn btn-primary"></button></td>
+				<td><button id="clrTxt" class="btn btn-danger">C</button></td>
+				<td><button id="del" class="btn btn-primary">DEL</button></td>
+			</tr>
+
+			<tr>
+				<td><button id="num7" class="btn btn-primary">7</button></td>
+				<td><button id="num8" class="btn btn-primary">8</button></td>
+				<td><button id="num9" class="btn btn-primary">9</button></td>
+				<td><button id="op3" class="btn btn-primary">&div;</button></td>
+			</tr>
+
+			<tr>
+				<td><button id="num4" class="btn btn-primary">4</button></td>
+				<td><button id="num5" class="btn btn-primary">5</button></td>
+				<td><button id="num6" class="btn btn-primary">6</button></td>
+				<td><button id="op2" class="btn btn-primary">&times;</button></td>
+			</tr>
+
+			<tr>
+				<td><button id="num1" class="btn btn-primary">1</button></td>
+				<td><button id="num2" class="btn btn-primary">2</button></td>
+				<td><button id="num3" class="btn btn-primary">3</button></td>
+				<td><button id="op1" class="btn btn-primary">&minus;</button></td>
+			</tr>
+
+			<tr>
+				<td><button id="decp" class="btn btn-primary">.</button></td>
+				<td><button id="num0" class="btn btn-primary">0</button></td>
+				<td><button id="eq" class="btn btn-success">=</button></td>
+				<td><button id="op0" class="btn btn-primary">&plus;</button></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="{% static "js/calc.js" %}"></script>
+</body>
+</html>
